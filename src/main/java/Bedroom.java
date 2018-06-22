@@ -21,4 +21,5 @@ public class Bedroom extends Room {
     public BedroomType getType() {
         return type;
     }
+
 }

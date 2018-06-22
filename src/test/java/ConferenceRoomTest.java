@@ -14,7 +14,7 @@ public class ConferenceRoomTest {
         conferenceRoom1 = new ConferenceRoom(50, "Balthasar", 50);
         conferenceRoom2 = new ConferenceRoom(100, "Melchior", 100);
         conferenceRoom3 = new ConferenceRoom(20, "Gaspar", 500);
-        guest1 = new Guest("Colin");
+        guest1 = new Guest("Colin", 50);
     }
 
     @Test

@@ -15,8 +15,8 @@ public class BedroomTest {
         bedroom1 = new Bedroom(1, 50, BedroomType.SINGLE);
         bedroom2 = new Bedroom(2, 100, BedroomType.DOUBLE);
         bedroom3 = new Bedroom(3, 100, BedroomType.DOUBLE);
-        guest1 = new Guest("Colin");
-        guest2 = new Guest("Neil");
+        guest1 = new Guest("Colin", 50);
+        guest2 = new Guest("Neil", 100);
 
     }
 
