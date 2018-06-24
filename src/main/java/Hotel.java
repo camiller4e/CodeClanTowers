@@ -20,4 +20,18 @@ public class Hotel {
     public int roomCount(){
         return this.rooms.size();
     }
+
+    public void checkInGuest(Guest guest, Bedroom bedroom) {
+        if (bedroom.getNightlyRate() <= guest.getDuckets())
+            guest.wallet -= bedroom.getNightlyRate();
+            bedroom.addGuests(guest);
+        }
+
+
+    public void addGuestToConferenceRoom(Guest guest, ConferenceRoom conferenceRoom) {
+        if (conferenceRoom.getDailyRate() <= guest.getDuckets())
+            guest.wallet -= conferenceRoom.getDailyRate();
+            conferenceRoom.addGuests(guest);
+    }
 }
+

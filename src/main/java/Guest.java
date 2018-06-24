@@ -1,6 +1,6 @@
 public class Guest {
     private String name;
-    private int wallet;
+    public int wallet;
 
     public Guest(String name, int wallet){
         this.name = name;
