@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.List;
 
 public abstract class Room {
     private int capacity;
@@ -25,4 +26,8 @@ public abstract class Room {
     public int guestCount(){
         return this.guests.size();
     }
+
+    public List<Guest> guestlist() { return guests.subList(0, 50); }
+
 }
+

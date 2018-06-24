@@ -60,5 +60,21 @@ public class HotelTest {
         assertEquals(50, guest1.getDuckets());
     }
 
+//    @Test
+//    public void canGetGuestList(){
+//        hotel.addRooms(room1);
+//        hotel.checkInGuest(guest1, (Bedroom) room1);
+//        Bedroom.guestlist(room1);
+//        assertEquals("Joben", room1.guestlist(room1));
+//    }
+
+    @Test
+    public void canCheckOutGuests(){
+        hotel.addRooms(room1);
+        hotel.checkInGuest(guest1, (Bedroom) room1);
+        hotel.checkOutGuest(guest1, (Bedroom) room1);
+        assertEquals(0, room1.guestCount());
+    }
+
 
 }

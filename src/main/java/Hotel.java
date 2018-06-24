@@ -33,5 +33,10 @@ public class Hotel {
             guest.wallet -= conferenceRoom.getDailyRate();
             conferenceRoom.addGuests(guest);
     }
+
+    public void checkOutGuest(Guest guest, Bedroom bedroom){
+        bedroom.removeGuests();
+    }
+
 }
 
